@@ -1,13 +1,73 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:rgb(202, 195, 195);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form_data{
+  margin-top: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_data1,.form_data2{
+  width: 500px;
+  height: 540px;
+}
+.form_data1{
+  padding: 1rem;
+  color: gray;
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+}
+.form_data2{
+  padding-left: 0;
+  padding-right: 0;
+}
+.form_data2 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+.btn_part{
+  display: flex;
+  justify-content: space-between;
+} 
+.btn_my{
+  padding: 0 1rem;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background: brown;
+  color: whitesmoke;
+  border-radius: 10px;
+  transition: 0.7s;
+  box-shadow: 3px 3px black;
+}
+.btn_my:hover{
+  background-color: gray;
+  color: brown;
+}
+form label,.form_heading h2{
+  color: brown;
+}
+.error_part{
+  font-size: 0.6rem;
+  margin-bottom: 0;
+  color: red;
+}
+@media (max-width: 987px) {
+  .form_data2{
+    margin-top: 1rem;
+    
+  }
+  .form_data1, .form_data2 img{
+    border-radius: 10px;
+  }
+  .form_data1, .form_data2{
+    margin: 1rem;
+  }
 }
